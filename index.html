@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/test.css" />
+		
+	</head> 
+	<body>
+		<div class="rotation1"></div>
+		<div class="rotation2 rotation1"></div>
+		<!--
+			rotation(轮播图生成的位置，图片列表)
+			使得在具体的某个位置上生成轮播图
+		-->
+		<script type="text/javascript" src="js/Swiper.js" ></script>
+		<script type="text/javascript">
+			var imgList = ["img/1.png","img/2.png","img/3.png","img/4.png","img/5.jpg"];
+			var rotation1 = new Swiper(".rotation1",imgList);
+			var rotation2 = new Swiper(".rotation2",imgList);
+		</script>
+	</body>
+</html>
